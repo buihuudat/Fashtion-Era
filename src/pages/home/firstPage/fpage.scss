@@ -1,0 +1,96 @@
+@import '../../../style/main.scss';
+
+.first {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+    padding-top: 3rem;
+  }
+  .fl {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 5rem;
+    &__title {
+      font-size: 1.5rem;
+      color: #888;
+      text-transform: uppercase;
+    }
+    &__subtitle {
+      padding: 2rem 0;
+      font-size: 3.5rem;
+      font-weight: 600;
+      width: 80%;
+      flex-wrap: wrap;
+    }
+    button {
+      margin-top: 2rem;
+      width: 50%;
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+      background-color: #fff;
+      color: #000;
+      border: 1px solid #000;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background-color: #000;
+        color: #fff;
+      }
+    }
+  }
+  .fr {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    position: relative;
+    img {
+      position: absolute;
+      &:nth-child(2) {
+        top: 0;
+        left: 100px;
+      }
+      &:nth-child(3) {
+        top: 0;
+        right: 70px;
+      }
+      &:nth-child(4) {
+        top: -40px;
+      }
+    }
+  }
+
+  &__service {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 3rem;
+    padding-top: 12rem;
+    &-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      i {
+        font-size: 2rem;
+        margin-right: 1rem;
+        color: $second-color;
+      }
+      &-content {
+        span {
+          font-size: 1.1rem;
+          font-weight: 600;
+          color: #000;
+        }
+        p {
+          opacity: .8;
+        }
+      }
+    }
+  }
+}
